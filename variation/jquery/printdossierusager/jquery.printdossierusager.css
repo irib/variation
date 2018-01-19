@@ -1,0 +1,29 @@
+#div_print_button{
+	margin-top:10px;
+	text-align:center;
+}
+.section{
+	width:23%;
+	border:1px solid grey;
+	float:left;
+	margin-left:1%;
+	margin-top:10px;
+}
+.section_title{
+	font-weight:bold;
+	font-size:1.1em;
+	background:#ddd;
+}
+.section div{
+	border-bottom:1px solid grey;
+	padding:3px 0;
+}
+#print_form_gauche,#print_form_droite{
+	width:45%;
+}
+#print_form_gauche{
+	float:left;
+}
+#print_form_droite{
+	float:right;
+}

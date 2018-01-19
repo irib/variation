@@ -1,0 +1,70 @@
+h1,.new_page_h2{
+	text-align:center;
+	margin-top:1cm;
+	font-size:2em;
+}
+h3.ss_partie{
+	font-size:1.5em;
+	text-decoration:underline
+}
+#confidentiel,#adresse{
+	text-align:center;
+	margin-top:2cm;
+	color:grey;
+	font-style:italic;
+	font-size:2;
+}
+#adresse{
+	font-style:normal;
+	font-weight:normal;
+}
+.photo,.titre_couverture{
+	text-align:center;
+}
+#print_by{
+	margin-top:4cm;
+	font-style:italic;
+	font-size:.8em;
+}
+p{
+	display:inline-block;
+}
+.titre2{
+	border-bottom:2px solid black;
+	font-weight:bold;
+	font-size:1.2em;
+	display:block;
+}
+table{
+	width:100%;
+}
+table,tr,td,th{
+	border-collapse:collapse;
+	border:1px solid black;
+}
+th{
+	font-weight:strong;
+}
+.libelle{
+	font-weight:bold;
+}
+.impair{
+	background:#EEE;
+}
+.noBreak{
+	page-break-inside: avoid;
+}
+.separation{
+	height:3cm;
+}
+.nothing_saved{
+	text-align:center;
+	font-size:125%;
+	color:grey;
+}
+p{
+	margin:0;
+}
+.titre2{
+	margin-top:50px;
+}

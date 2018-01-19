@@ -1,0 +1,24 @@
+table#histoTable, table#histoTable tr, table#histoTable tr td, table#histoTable tr th{
+	border:1px solid black;
+	border-collapse:collapse;
+}
+table#histoTable{
+	width:100%;
+}
+table#histoTable tr td{
+	padding:5px;
+}
+table#histoTable tr th{
+	background:grey;
+	color:white;
+	padding:5px;
+}
+table#histoTable tr td pre{
+	margin:0;
+}
+.noHistory{
+	text-align:center;
+}
+.firstCol{
+	width:170px;
+}

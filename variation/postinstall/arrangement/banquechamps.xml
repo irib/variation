@@ -1,0 +1,820 @@
+<?xml version="1.0"?>
+<banque>
+  <selections>
+    <selection>
+      <code>animal_de_compagnie</code>
+      <libelle>Animal de compagnie</libelle>
+      <info/>
+      <entrees>
+        <entree>Chien</entree>
+        <entree>Chat</entree>
+      </entrees>
+    </selection>
+    <selection>
+      <code>composition_famille</code>
+      <libelle>Composition de famille</libelle>
+      <info/>
+      <entrees>
+        <entree>Monoparentale</entree>
+        <entree>Couple</entree>
+        <entree>Couple recompos&#xE9;</entree>
+        <entree>Autre</entree>
+      </entrees>
+    </selection>
+    <selection>
+      <code>problematique</code>
+      <libelle>Problematique</libelle>
+      <info/>
+      <entrees>
+        <entree>Carence &#xE9;ducative</entree>
+        <entree>Difficult&#xE9;s financi&#xE8;res</entree>
+      </entrees>
+    </selection>
+    <selection>
+      <code>sexe</code>
+      <libelle>Sexe</libelle>
+      <info/>
+      <entrees>
+        <entree>M</entree>
+        <entree>F</entree>
+      </entrees>
+    </selection>
+    <selection>
+      <code>type_de_logement</code>
+      <libelle>Type de logement</libelle>
+      <info/>
+      <entrees>
+        <entree>Studio</entree>
+        <entree>T2</entree>
+      </entrees>
+    </selection>
+  </selections>
+  <dirinfo>
+    <libelle>Dossier</libelle>
+    <dirinfo>
+      <libelle>Etat civil</libelle>
+      <infos>
+        <info>
+          <code>lieu_de_naissance</code>
+          <int_code>texte</int_code>
+          <libelle>Lieu de naissance</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide>Ce champ est un exemple de champ de type "texte".
+
+Il peut etre utilis&#xE9; aussi bien pour les usagers que pour les membres familiaux ou les membres du personnel.</aide>
+        </info>
+        <info>
+          <code>nationalite_actuelle</code>
+          <int_code>texte</int_code>
+          <libelle>Nationalit&#xE9;</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide>Ce champ est un exemple de champ de type "texte".
+
+Il peut etre utilis&#xE9; aussi bien pour les usagers que pour les membres familiaux ou les membres du personnel.</aide>
+        </info>
+        <info>
+          <code>sexe</code>
+          <int_code>selection</int_code>
+          <libelle>Sexe</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide>Ce champ est un exemple de champ de type "boitier de s&#xE9;lection".
+
+Il peut etre utilis&#xE9; aussi bien pour les usager que pour les membres familiaux, les membres du personnel ou les contacts.</aide>
+          <selection_code>sexe</selection_code>
+        </info>
+      </infos>
+    </dirinfo>
+    <dirinfo>
+      <libelle>Education</libelle>
+      <infos>
+        <info>
+          <code>referent</code>
+          <int_code>contact</int_code>
+          <libelle>R&#xE9;f&#xE9;rent</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide/>
+          <contact_filtre>personnel</contact_filtre>
+          <contact_secteur>education</contact_secteur>
+        </info>
+      </infos>
+    </dirinfo>
+    <dirinfo>
+      <libelle>Suivi m&#xE9;dical</libelle>
+      <infos>
+        <info>
+          <code>caisse_affiliation</code>
+          <int_code>etablissement</int_code>
+          <libelle>Caisse d'affiliation</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide/>
+          <etablissement_interne/>
+          <etablissement_secteur>sante</etablissement_secteur>
+        </info>
+        <info>
+          <code>intervenants_medicaux_externes</code>
+          <int_code>contact</int_code>
+          <libelle>Intervenants m&#xE9;dicaux externes</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide/>
+          <contact_filtre>contact</contact_filtre>
+          <contact_secteur>sante</contact_secteur>
+        </info>
+        <info>
+          <code>intervenants_medicaux_internes</code>
+          <int_code>contact</int_code>
+          <libelle>Intervenants m&#xE9;dicaux internes</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide/>
+          <contact_filtre>personnel</contact_filtre>
+          <contact_secteur>sante</contact_secteur>
+        </info>
+        <info>
+          <code>numero_securite_sociale</code>
+          <int_code>texte</int_code>
+          <libelle>Num&#xE9;ro de s&#xE9;curit&#xE9; sociale</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide/>
+        </info>
+        <info>
+          <code>traitements</code>
+          <int_code>textelong</int_code>
+          <libelle>Traitement(s) sp&#xE9;cifique(s)</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide/>
+          <textelong_nblignes>5</textelong_nblignes>
+        </info>
+      </infos>
+    </dirinfo>
+    <dirinfo>
+      <libelle>Habitat et cadre de vie</libelle>
+      <infos>
+        <info>
+          <code>groupe_logement</code>
+          <int_code>groupe</int_code>
+          <libelle>Groupe de logement collectif</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide/>
+          <groupe_type>hebergement</groupe_type>
+          <groupe_soustype/>
+        </info>
+        <info>
+          <code>type_de_logement</code>
+          <int_code>selection</int_code>
+          <libelle>Type de logement</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide>Ce champ est un exemple de champ de type "boitier de s&#xE9;lection".</aide>
+          <selection_code>type_de_logement</selection_code>
+        </info>
+      </infos>
+    </dirinfo>
+    <dirinfo>
+      <libelle>D&#xE9;cision de prise en charge</libelle>
+      <infos>
+        <info>
+          <code>contact_decision</code>
+          <int_code>contact</int_code>
+          <libelle>Contact</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide>Ce champ est un exemple de champ de type lien entre usager et contact. Il cible les contacts dont le m&#xE9;tier rel&#xE8;ve de le th&#xE9;matique de d&#xE9;cision de prise en charge.</aide>
+          <contact_filtre>contact</contact_filtre>
+          <contact_secteur>decideur</contact_secteur>
+        </info>
+        <info>
+          <code>decision</code>
+          <int_code>groupe</int_code>
+          <libelle>D&#xE9;cision de prise en charge</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide/>
+          <groupe_type>decideur</groupe_type>
+          <groupe_soustype/>
+        </info>
+        <info>
+          <code>notes_decision</code>
+          <int_code>textelong</int_code>
+          <libelle>Notes relatives &#xE0; la d&#xE9;cision de prise en charge</libelle>
+          <libelle_complet/>
+          <etendu>1</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide>Ce champ est un exemple de champ texte libre.
+
+L'option "&#xE9;tendu" permet un affichage sur toute la largeur du masque de saisie. 
+
+Ce champ peut etre int&#xE9;gr&#xE9; dans une vue de liste ou dans un masque de saisie.</aide>
+          <textelong_nblignes>5</textelong_nblignes>
+        </info>
+        <info>
+          <code>numero_dossier_decision</code>
+          <int_code>texte</int_code>
+          <libelle>Num&#xE9;ro de dossier</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide>Ce champ est un exemple de champ de type "texte".
+
+Il est &#xE0; priori seulement utilis&#xE9; pour les usagers.</aide>
+        </info>
+      </infos>
+    </dirinfo>
+    <dirinfo>
+      <libelle>Restauration</libelle>
+      <infos>
+        <info>
+          <code>intolerances_alimentaires</code>
+          <int_code>textelong</int_code>
+          <libelle>Intol&#xE9;rance</libelle>
+          <libelle_complet/>
+          <etendu>1</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide>Ce champ est un exemple de champ texte libre.
+
+L'option "&#xE9;tendu" permet un affichage sur toute la largeur du masque de saisie. 
+
+Ce champ peut etre int&#xE9;gr&#xE9; dans une vue de liste ou dans un masque de saisie.</aide>
+          <textelong_nblignes>5</textelong_nblignes>
+        </info>
+        <info>
+          <code>sans_sel</code>
+          <int_code>coche</int_code>
+          <libelle>Sans sel</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide>Ce champ est un exemple de champ de type "case &#xE0; cocher".</aide>
+        </info>
+      </infos>
+    </dirinfo>
+    <dirinfo>
+      <libelle>Droits et aides</libelle>
+      <dirinfo>
+        <libelle>Handicap</libelle>
+        <infos>
+          <info>
+            <code>aide_handicap2</code>
+            <int_code>coche</int_code>
+            <libelle>Allocation aux adultes handicap&#xE9;s (AAH)</libelle>
+            <libelle_complet/>
+            <etendu>0</etendu>
+            <historique>0</historique>
+            <multiple>0</multiple>
+            <aide>Ce champ est un exemple de champ de type "case &#xE0; cocher".</aide>
+          </info>
+          <info>
+            <code>aide_handicap1</code>
+            <int_code>coche</int_code>
+            <libelle>Allocation d&#x2019;&#xE9;ducation de l&#x2019;enfant handicap&#xE9; (Aeeh)</libelle>
+            <libelle_complet/>
+            <etendu>0</etendu>
+            <historique>0</historique>
+            <multiple>0</multiple>
+            <aide>Ce champ est un exemple de champ de type "case &#xE0; cocher".</aide>
+          </info>
+        </infos>
+      </dirinfo>
+      <dirinfo>
+        <libelle>Famille</libelle>
+        <infos>
+          <info>
+            <code>numero_allocataire_caf</code>
+            <int_code>texte</int_code>
+            <libelle>N&#xB0; allocataire CAF</libelle>
+            <libelle_complet/>
+            <etendu>0</etendu>
+            <historique>0</historique>
+            <multiple>0</multiple>
+            <aide>Ce champ est un exemple de champ de type "texte".
+
+Il peut etre utilis&#xE9; aussi bien pour les usager que pour les membres familiaux.</aide>
+          </info>
+        </infos>
+      </dirinfo>
+      <dirinfo>
+        <libelle>Assurances</libelle>
+        <infos>
+          <info>
+            <code>responsabilite_civile</code>
+            <int_code>coche</int_code>
+            <libelle>Responsabilit&#xE9; civile</libelle>
+            <libelle_complet/>
+            <etendu>0</etendu>
+            <historique>0</historique>
+            <multiple>0</multiple>
+            <aide>Ce champ est un exemple de champ de type "case &#xE0; cocher".</aide>
+          </info>
+        </infos>
+      </dirinfo>
+      <dirinfo>
+        <libelle>Droits de s&#xE9;jour</libelle>
+        <infos>
+          <info>
+            <code>autorisation_provisoire_de_travail</code>
+            <int_code>date</int_code>
+            <libelle>Autorisation Provisoire de Travail (APT)</libelle>
+            <libelle_complet/>
+            <etendu>0</etendu>
+            <historique>0</historique>
+            <multiple>0</multiple>
+            <aide/>
+            <date_echeance>1</date_echeance>
+            <date_echeance_icone/>
+            <date_echeance_secteur/>
+          </info>
+        </infos>
+      </dirinfo>
+      <infos/>
+    </dirinfo>
+    <dirinfo>
+      <libelle>P&#xE9;dagogie</libelle>
+      <infos>
+        <info>
+          <code>contact_pedagogie</code>
+          <int_code>contact</int_code>
+          <libelle>Contacts enseignement et formation</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide/>
+          <contact_filtre>contact</contact_filtre>
+          <contact_secteur>pedagogie</contact_secteur>
+        </info>
+      </infos>
+    </dirinfo>
+    <dirinfo>
+      <libelle>Projet individuel, bilan et &#xE9;valuation</libelle>
+      <infos>
+        <info>
+          <code>date_projet</code>
+          <int_code>date</int_code>
+          <libelle>Date de derni&#xE8;re mise &#xE0; jour</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide>Ce champ est un exemple de champ de type "date".
+
+L'option "&#xE9;ch&#xE9;ance" permet de faire apparaitre cette date dans les agendas.</aide>
+          <date_echeance>1</date_echeance>
+          <date_echeance_icone/>
+          <date_echeance_secteur>projet</date_echeance_secteur>
+        </info>
+        <info>
+          <code>date_prochain_projet</code>
+          <int_code>date</int_code>
+          <libelle>Date de prochaine mise &#xE0; jour</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide>Ce champ est un exemple de champ de type "date".
+
+L'option "&#xE9;ch&#xE9;ance" permet de faire apparaitre cette date dans les agendas.</aide>
+          <date_echeance>1</date_echeance>
+          <date_echeance_icone/>
+          <date_echeance_secteur>projet</date_echeance_secteur>
+        </info>
+        <info>
+          <code>projet_moyens</code>
+          <int_code>textelong</int_code>
+          <libelle>Moyens</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide>Ce champ est un exemple de champ texte libre.
+
+L'option "&#xE9;tendu" permet un affichage sur toute la largeur du masque de saisie. 
+
+Ce champ peut etre int&#xE9;gr&#xE9; dans une vue de liste ou dans un masque de saisie.</aide>
+          <textelong_nblignes>5</textelong_nblignes>
+        </info>
+        <info>
+          <code>projet_objectifs</code>
+          <int_code>textelong</int_code>
+          <libelle>Objectifs</libelle>
+          <libelle_complet/>
+          <etendu>1</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide>Ce champ est un exemple de champ texte libre.
+
+L'option "&#xE9;tendu" permet un affichage sur toute la largeur du masque de saisie. 
+
+Ce champ peut etre int&#xE9;gr&#xE9; dans une vue de liste ou dans un masque de saisie.</aide>
+          <textelong_nblignes>5</textelong_nblignes>
+        </info>
+      </infos>
+    </dirinfo>
+    <dirinfo>
+      <libelle>Admission et prise en charge</libelle>
+      <dirinfo>
+        <libelle>Autorisations</libelle>
+        <infos>
+          <info>
+            <code>droit_image</code>
+            <int_code>coche</int_code>
+            <libelle>Droit &#xE0; l'image</libelle>
+            <libelle_complet/>
+            <etendu>0</etendu>
+            <historique>0</historique>
+            <multiple>0</multiple>
+            <aide>Ce champ est un exemple de validation de l'existence d'une autorisation.
+
+Le document correspondant pourra etre num&#xE9;ris&#xE9; et d&#xE9;pos&#xE9; dans l'espace "documents" si n&#xE9;cessaire.</aide>
+          </info>
+        </infos>
+      </dirinfo>
+      <dirinfo>
+        <libelle>Pi&#xE8;ces</libelle>
+        <infos>
+          <info>
+            <code>admission_piece1</code>
+            <int_code>coche</int_code>
+            <libelle>Carnet de vaccinations</libelle>
+            <libelle_complet/>
+            <etendu>0</etendu>
+            <historique>0</historique>
+            <multiple>0</multiple>
+            <aide>Ce champ est un exemple de validation de l'existence d'une pi&#xE8;ces necessaire &#xE0; l'admission d'une usager.
+
+Le document correspondant pourra etre num&#xE9;ris&#xE9; et d&#xE9;pos&#xE9; dans l'espace "documents" si n&#xE9;cessaire.</aide>
+          </info>
+        </infos>
+      </dirinfo>
+      <infos>
+        <info>
+          <code>groupe_prise_en_charge</code>
+          <int_code>groupe</int_code>
+          <libelle>Groupe de prise en charge</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide>Ce champ est un exemple de champ de type "affectation". Il permettra d'affecter un usager &#xE0; des modalit&#xE9;s de prise en charge.
+
+Au moins un champ de type "affectation" ciblant la th&#xE9;matique "prise en charge" est n&#xE9;cessaire au bon fonctionnement de l'application.</aide>
+          <groupe_type>prise_en_charge</groupe_type>
+          <groupe_soustype/>
+        </info>
+        <info>
+          <code>notes_prise_en_charge</code>
+          <int_code>textelong</int_code>
+          <libelle>Notes de prises en charges</libelle>
+          <libelle_complet/>
+          <etendu>1</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide>Ce champ est un exemple de champ texte libre.
+
+L'option "&#xE9;tendu" permet un affichage sur toute la largeur du masque de saisie. 
+
+Ce champ peut etre int&#xE9;gr&#xE9; dans une vue de liste ou dans un masque de saisie.</aide>
+          <textelong_nblignes>5</textelong_nblignes>
+        </info>
+        <info>
+          <code>numero_dossier_prise_en_charge</code>
+          <int_code>texte</int_code>
+          <libelle>Num&#xE9;ro de dossier</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide>Ce champ est un exemple de champ de type "texte".
+
+Il est &#xE0; priori seulement utilis&#xE9; pour les usagers.</aide>
+        </info>
+        <info>
+          <code>problematique</code>
+          <int_code>selection</int_code>
+          <libelle>Probl&#xE9;matique</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide/>
+          <selection_code>problematique</selection_code>
+        </info>
+      </infos>
+    </dirinfo>
+    <dirinfo>
+      <libelle>Entourage et famille</libelle>
+      <infos>
+        <info>
+          <code>animal_de_compagnie</code>
+          <int_code>selection</int_code>
+          <libelle>Animal de compagnie</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide/>
+          <selection_code>animal_de_compagnie</selection_code>
+        </info>
+        <info>
+          <code>composition_de_famille</code>
+          <int_code>selection</int_code>
+          <libelle>Composition de famille</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide>Ce champ est un exemple de boitier de s&#xE9;lection.
+
+Il peut etre &#xE0; priori aussi bien utilis&#xE9; pour les donn&#xE9;es des usagers que celles des familles.</aide>
+          <selection_code>composition_famille</selection_code>
+        </info>
+        <info>
+          <code>famille</code>
+          <int_code>famille</int_code>
+          <libelle>Famille</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide>Ce champ est un exemple de definition de liens avec des membres familiaux.</aide>
+        </info>
+        <info>
+          <code>notes_famille</code>
+          <int_code>textelong</int_code>
+          <libelle>Notes relatives &#xE0; la famille</libelle>
+          <libelle_complet/>
+          <etendu>1</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide>Ce champ est un exemple de champ texte libre.
+
+L'option "&#xE9;tendu" permet un affichage sur toute la largeur du masque de saisie. 
+
+Ce champ peut etre int&#xE9;gr&#xE9; dans une vue de liste ou dans un masque de saisie.</aide>
+          <textelong_nblignes>5</textelong_nblignes>
+        </info>
+      </infos>
+    </dirinfo>
+    <dirinfo>
+      <libelle>Membre du personnel</libelle>
+      <infos/>
+    </dirinfo>
+    <dirinfo>
+      <libelle>Contact</libelle>
+      <infos/>
+    </dirinfo>
+    <infos/>
+  </dirinfo>
+  <dirinfo>
+    <libelle>Obligatoires</libelle>
+    <dirinfo>
+      <libelle>Personnel</libelle>
+      <infos>
+        <info>
+          <code>personnel_affectation</code>
+          <int_code>affectation</int_code>
+          <libelle>Affectation</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide>Permet d'affecter un membre du personnel &#xE0; un groupe de l'&#xE9;tablissement. 
+
+Attention! Ce champs n'est pas associ&#xE9; &#xE0; une quelconque gestion de droit d'acc&#xE8;s pour l'utilisateur. 
+
+Ce champs ne peut etre utilis&#xE9; que dans les masques et listes de membres du personnel.</aide>
+        </info>
+        <info>
+          <code>personnel_metier</code>
+          <int_code>metier</int_code>
+          <libelle>Fonction</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide>Permet d'associer un membre du personnel &#xE0; une fonction. La fonction sera utilis&#xE9;e pour filtrer les employ&#xE9;es dans les boitier de s&#xE9;lection des champs de type "lien".
+
+Ce champ est r&#xE9;serv&#xE9; aux listes d'employ&#xE9;s et aux masques de saisie relatifs aux employ&#xE9;s.
+
+Ce champs ne peut etre utilis&#xE9; que dans les masques et listes de membres du personnel.</aide>
+          <metier_secteur>personnel</metier_secteur>
+        </info>
+      </infos>
+    </dirinfo>
+    <dirinfo>
+      <libelle>Contact</libelle>
+      <infos>
+        <info>
+          <code>contact_metier</code>
+          <int_code>metier</int_code>
+          <libelle>Fonction</libelle>
+          <libelle_complet/>
+          <etendu>0</etendu>
+          <historique>0</historique>
+          <multiple>0</multiple>
+          <aide/>
+          <metier_secteur>contact</metier_secteur>
+        </info>
+      </infos>
+    </dirinfo>
+    <infos>
+      <info>
+        <code>adresse</code>
+        <int_code>texte</int_code>
+        <libelle>Adresse</libelle>
+        <libelle_complet/>
+        <etendu>0</etendu>
+        <historique>0</historique>
+        <multiple>1</multiple>
+        <aide>Ce champ est un champ multiple. Il pourra contenir plusieurs lignes.</aide>
+      </info>
+      <info>
+        <code>code_postal</code>
+        <int_code>texte</int_code>
+        <libelle>Code postal</libelle>
+        <libelle_complet/>
+        <etendu>0</etendu>
+        <historique>0</historique>
+        <multiple>0</multiple>
+        <aide>Ce champ est un exemple de champ de type "texte".
+
+Il peut etre utilis&#xE9; aussi bien pour les usagers que pour les membres familiaux, les membres du personnel ou les contacts.</aide>
+      </info>
+      <info>
+        <code>date_naissance</code>
+        <int_code>date</int_code>
+        <libelle>Date de naissance</libelle>
+        <libelle_complet/>
+        <etendu>0</etendu>
+        <historique>0</historique>
+        <multiple>0</multiple>
+        <aide>Ce champ est un exemple de champ de type "date".
+
+Ce champ est indispensable au fonctionnement de l'application.
+
+Il doit etre utilis&#xE9; pour les usagers.
+
+Il peut etre utilis&#xE9; pour les membres familiaux, les contacts externes ou les membres du personnel.
+
+
+</aide>
+        <date_echeance/>
+        <date_echeance_icone/>
+        <date_echeance_secteur/>
+      </info>
+      <info>
+        <code>nom</code>
+        <int_code>texte</int_code>
+        <libelle>Nom</libelle>
+        <libelle_complet/>
+        <etendu>0</etendu>
+        <historique>0</historique>
+        <multiple>0</multiple>
+        <aide>Ce champ est indispensable au fonctionnement de l'application.
+
+Il doit etre utilis&#xE9; aussi bien pour les usager que pour les membres familiaux, les contacts ou les membres du personnel.</aide>
+      </info>
+      <info>
+        <code>prenom</code>
+        <int_code>texte</int_code>
+        <libelle>Pr&#xE9;nom</libelle>
+        <libelle_complet/>
+        <etendu>0</etendu>
+        <historique>0</historique>
+        <multiple>0</multiple>
+        <aide>Ce champ est indispensable au fonctionnement de l'application.
+
+Il doit etre utilis&#xE9; aussi bien pour les usager que pour les membres familiaux, les contacts ou les membres du personnel.</aide>
+      </info>
+      <info>
+        <code>statut_usager</code>
+        <int_code>statut_usager</int_code>
+        <libelle>Statut</libelle>
+        <libelle_complet/>
+        <etendu>0</etendu>
+        <historique>0</historique>
+        <multiple>0</multiple>
+        <aide>Ce champ est indispensable au fonctionnement de l'application.
+
+La valeur de ce champ est calcul&#xE9; automatiquement pour chaque usager &#xE0; partir des prises en charge.
+
+Ce champ ne peut etre utilis&#xE9; que dans les masques et listes d'usagers.</aide>
+      </info>
+      <info>
+        <code>telephone_fixe</code>
+        <int_code>texte</int_code>
+        <libelle>T&#xE9;l&#xE9;phone fixe</libelle>
+        <libelle_complet/>
+        <etendu>0</etendu>
+        <historique>0</historique>
+        <multiple>0</multiple>
+        <aide>Ce champ est indispensable au fonctionnement de l'application.
+
+Il doit etre utilis&#xE9; aussi bien pour les membres familiaux, les contacts ou les membres du personnel.
+
+Il peut etre utilis&#xE9; pour les usagers.
+</aide>
+      </info>
+      <info>
+        <code>telephone_mobile</code>
+        <int_code>texte</int_code>
+        <libelle>T&#xE9;l&#xE9;phone mobile</libelle>
+        <libelle_complet/>
+        <etendu>0</etendu>
+        <historique>0</historique>
+        <multiple>0</multiple>
+        <aide>Ce champ est indispensable au fonctionnement de l'application.
+
+Il doit etre utilis&#xE9; aussi bien pour les membres familiaux, les contacts ou les membres du personnel.
+
+Il peut etre utilis&#xE9; pour les usagers.</aide>
+      </info>
+      <info>
+        <code>ville</code>
+        <int_code>texte</int_code>
+        <libelle>Ville</libelle>
+        <libelle_complet/>
+        <etendu>0</etendu>
+        <historique>0</historique>
+        <multiple>0</multiple>
+        <aide>Ce champ est un exemple de champ de type "texte".
+
+Il peut etre utilis&#xE9; aussi bien pour les usagers que pour les membres familiaux, les membres du personnel ou les contacts.</aide>
+      </info>
+    </infos>
+  </dirinfo>
+  <dirinfo>
+    <libelle>Poubelle</libelle>
+    <infos>
+      <info>
+        <code>diabetique</code>
+        <int_code>coche</int_code>
+        <libelle>Diab&#xE9;tique</libelle>
+        <libelle_complet/>
+        <etendu>0</etendu>
+        <historique>0</historique>
+        <multiple>0</multiple>
+        <aide/>
+      </info>
+      <info>
+        <code>alimentation_intolerance</code>
+        <int_code>texte</int_code>
+        <libelle>Intol&#xE9;rance</libelle>
+        <libelle_complet/>
+        <etendu>1</etendu>
+        <historique>0</historique>
+        <multiple>0</multiple>
+        <aide/>
+      </info>
+      <info>
+        <code/>
+        <int_code>groupe</int_code>
+        <libelle>Prise en charge</libelle>
+        <libelle_complet/>
+        <etendu>0</etendu>
+        <historique>0</historique>
+        <multiple>0</multiple>
+        <aide/>
+        <groupe_type>prise_en_charge</groupe_type>
+        <groupe_soustype/>
+      </info>
+    </infos>
+  </dirinfo>
+</banque>
